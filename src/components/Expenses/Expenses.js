@@ -1,0 +1,35 @@
+import React from "react";
+
+import ExpenseItem from "./ExpenseItem";
+import Card from "../UI/Card";
+import './Expenses.css'
+
+const Expenses = (props) => {
+    return <Card className="expenses">
+        <ExpenseItem
+        title={props.data[0].title}
+        id={props.data[0].id}
+        amount={props.data[0].amount}
+        date={props.data[0].date}
+      />
+      <ExpenseItem
+        title={props.data[1].title}
+        id={props.data[1].id}
+        amount={props.data[1].amount}
+        date={props.data[1].date}
+      />
+      <ExpenseItem
+        title={props.data[2].title}
+        id={props.data[2].id}
+        amount={props.data[2].amount}
+        date={props.data[2].date}
+      />
+      <ExpenseItem
+        title={props.data[3].title}
+        id={props.data[3].id}
+        amount={props.data[3].amount}
+        date={props.data[3].date}
+      />
+    </Card>
+}
+export default Expenses;
